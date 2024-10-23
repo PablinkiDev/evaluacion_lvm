@@ -1,0 +1,30 @@
+    1  lsblk
+    2  sudo fdisk /dev/sdb 
+    3  sudo fdisk /dev/sdc 
+    4  lsblk
+    5  sudo fdisk /dev/sdd
+    6  sudo pvs
+    7  lsblk
+    8  sudo pvcreate /dev/sdb1
+    9  sudo pvcreate /dev/sdc1
+   10  sudo pvcreate /dev/sdd1
+   11  sudo pvs
+   12  sudo vgcreate datos /dev/sdb1
+   13  sudo vgextend datos /dev/sdc1
+   14  sudo vgextend datos /dev/sdd1
+   15  sudo vgs
+   16  sudo lvcreate -L 1G -n www datos
+   17  sudo lvcreate -L 4G -n salvas datos
+   18  sudo lvs
+   19  sudo lvextend -L +1G /dev/datos/www
+   20  sudo lvs
+   21  sudo vgs
+   22  sudo lvextend -L +1012M /dev/datos/www
+   23  sudo lvs
+   24  ls
+   25  pwd
+   26  history > /home/yo/repogit
+   27  rm -r repogit 
+   28  history > /home/yo/repogit/history.txt
+   29  mkdir -p /home/yo/repogit
+   30  history > /home/yo/repogit/history.txt
